@@ -34,6 +34,8 @@ public class MazeManager : MonoBehaviour
                     myCamera.orthographicSize = 12.5f;
                 }
             }
+
+            
         } else 
         {
             Debug.LogWarning("To use the maze properly. Please add maze difficulties, a maze spawner, and a camera and add it to the Maze Manager script.");
