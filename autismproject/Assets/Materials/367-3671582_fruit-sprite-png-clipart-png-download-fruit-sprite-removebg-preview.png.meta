@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: aaf377314fea6414aa8fc4ae5b05effd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2130031254897837043
+    second: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_0
+  - first:
+      213: -801541798556917118
+    second: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_1
+  - first:
+      213: -2967187736697192606
+    second: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_2
+  - first:
+      213: -4194556525618351855
+    second: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_3
+  - first:
+      213: 908879176657281024
+    second: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_4
+  - first:
+      213: -6032329190991892347
+    second: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_5
+  - first:
+      213: 5760447379444523736
+    second: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_6
+  - first:
+      213: 1722636105419865739
+    second: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_7
+  - first:
+      213: -7595957398778907712
+    second: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_8
+  - first:
+      213: -5125956037026868003
+    second: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 305
+        width: 83
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f34aa414246f8d10800000000000000
+      internalID: 2130031254897837043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 304
+        width: 102
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28223602bf950e4f0800000000000000
+      internalID: -801541798556917118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 307
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fb44c697e62d6d0800000000000000
+      internalID: -2967187736697192606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 305
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111b83c4011f9c5c0800000000000000
+      internalID: -4194556525618351855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 157
+        width: 97
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0002864bbccfc9c00800000000000000
+      internalID: 908879176657281024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 161
+        width: 86
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58075babf8cd84ca0800000000000000
+      internalID: -6032329190991892347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 177
+        width: 116
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2ee171f5831ff40800000000000000
+      internalID: 5760447379444523736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 27
+        width: 113
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e30d4396808e710800000000000000
+      internalID: 1722636105419865739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 49
+        width: 120
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c378ccadfcb59690800000000000000
+      internalID: -7595957398778907712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 367-3671582_fruit-sprite-png-clipart-png-download-fruit-sprite-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 32
+        width: 107
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd49ebe8422fcd8b0800000000000000
+      internalID: -5125956037026868003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
