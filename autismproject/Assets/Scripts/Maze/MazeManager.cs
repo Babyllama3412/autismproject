@@ -1,16 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class MazeManager : MonoBehaviour
 {
     public MazeSpawner mazeSpawner;
     public Camera myCamera;
     public MazeGoal mazeGoal;
+    public Material endPlatformMaterial;
     
     [Space(20)]
     public MazeDifficulty[] mazeDifficulties;
     public string currentDifficulty;
+
+
+    MazeGoal goal;
+    MazeDifficulty currentMaze;
 
     void Awake()
     {
@@ -22,12 +28,20 @@ public class MazeManager : MonoBehaviour
             {
                 if(mazeDifficulties[i].difficulty == currentDifficulty)
                 {
-                    mazeSpawner.Rows = mazeDifficulties[i].rows;
-                    mazeSpawner.Columns = mazeDifficulties[i].columns;
-                    myCamera.transform.position = mazeDifficulties[i].cameraPosition;
-                    myCamera.orthographicSize = mazeDifficulties[i].cameraSize;
+                    currentMaze = mazeDifficulties[i];
+
+                    mazeSpawner.Rows = currentMaze.rows;
+                    mazeSpawner.Columns = currentMaze.columns;
+                    myCamera.transform.position =currentMaze.cameraPosition;
+                    myCamera.orthographicSize = currentMaze.cameraSize;
+
+                    goal = Instantiate(mazeGoal.gameObject, mazeDifficulties[i].mazeGoalPosition, Quaternion.identity).GetComponent<MazeGoal>();
+                    
                 } else
                 {
+                    currentMaze = null;
+                    goal = null;
+
                     mazeSpawner.Rows = 5;
                     mazeSpawner.Columns = 5;
                     myCamera.transform.position = new Vector3(10,35,10);
@@ -40,6 +54,22 @@ public class MazeManager : MonoBehaviour
         {
             Debug.LogWarning("To use the maze properly. Please add maze difficulties, a maze spawner, and a camera and add it to the Maze Manager script.");
         }
+    }
+
+    void Start()
+    {
+        RaycastHit hit;
+                    
+        if(Physics.Raycast(goal.transform.position, Vector3.down, out hit, Mathf.Infinity))
+        {
+            hit.transform.GetComponent<MeshRenderer>().material = endPlatformMaterial;
+        }
+    }
+    
+    void Update()
+    {
+        if(goal != null && currentMaze != null && goal.finished)
+            currentMaze.onFinishEvent.Invoke();
     }
 }
 
@@ -55,4 +85,5 @@ public class MazeDifficulty
 
     [Space(20)]
     public Vector3 mazeGoalPosition;
+    public UnityEvent onFinishEvent;
 }

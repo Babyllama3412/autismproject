@@ -241,7 +241,7 @@ MonoBehaviour:
   RandomSeed: 12345
   Floor: {fileID: 3452325404290661229, guid: 369f84f27eeea9c4ea288913f93f9298, type: 3}
   Wall: {fileID: 1113040957652327556, guid: c878784f765f2924e9eb1cedcad880a6, type: 3}
-  Pillar: {fileID: 6424893387396042676, guid: 64c2512bbbfb8d745a463bc8a2e2d98d, type: 3}
+  Pillar: {fileID: 0}
   Rows: 5
   Columns: 5
   CellWidth: 5
@@ -276,80 +276,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mazeSpawner: {fileID: 1797255339}
   myCamera: {fileID: 1420463837}
-  mazeGoal: {fileID: 8698551958842899073, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
+  mazeGoal: {fileID: 993760063744725306, guid: 18fde230dd4a1c7449fa19adf101077d, type: 3}
+  endPlatformMaterial: {fileID: 2100000, guid: bf1871e9f7a29f341a5dfcc8c1f293cd, type: 2}
   mazeDifficulties:
   - difficulty: Easy
     rows: 5
     columns: 5
     cameraPosition: {x: 10, y: 10, z: 10}
     cameraSize: 13
-    mazeGoalPosition: {x: 0, y: 0, z: 0}
-  currentDifficulty: Easy
---- !u!1001 &1987664744
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8145369653045832569, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145369653045832569, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 19.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145369653045832569, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145369653045832569, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 20.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145369653045832569, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145369653045832569, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145369653045832569, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145369653045832569, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145369653045832569, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145369653045832569, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8145369653045832569, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8698551958842899073, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: OnWin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2141201772}
-    - target: {fileID: 8698551958842899073, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: OnWin.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 9038258562319732947, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
-      propertyPath: m_Name
-      value: EasyModeGoal
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7c37c2b4d4d8a8b4398fe91fe325a8cf, type: 3}
+    mazeGoalPosition: {x: 20, y: 2.19, z: 20}
+    onFinishEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2141201772}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - difficulty: Medium
+    rows: 10
+    columns: 10
+    cameraPosition: {x: 23, y: 10, z: 22.5}
+    cameraSize: 25.5
+    mazeGoalPosition: {x: 45, y: 2.19, z: 45}
+    onFinishEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2141201772}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  currentDifficulty: Medium
 --- !u!1 &2095164870
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,7 +507,7 @@ Transform:
   m_GameObject: {fileID: 2141201772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.82, z: 0.25}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -549,7 +521,7 @@ Rigidbody:
   m_GameObject: {fileID: 2141201772}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 1.75
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -565,8 +537,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2141201772}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48a3aea66c80209468a4c613fe0c6ccb, type: 3}
+  m_Script: {fileID: 11500000, guid: b7a6de98743acaa4182f1dd45c8f2213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rollSpeed: 10
-  allowRoll: 1
+  speed: 1
+  mousePositions: {x: 0, y: 0}
