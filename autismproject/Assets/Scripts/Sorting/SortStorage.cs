@@ -7,7 +7,6 @@ using UnityEngine;
 public class SortStorage : MonoBehaviour
 {
     public string objectCategoryAllowed;
-    public string objectsTag;
     public bool sortedProperly;
     public List<GameObject> objects = new List<GameObject>(); 
     // Start is called before the first frame update
@@ -24,7 +23,7 @@ public class SortStorage : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if(other.tag == objectsTag)
+        if(other.GetComponent<SortDragger>() != null)
         {
             if(!objects.Contains(other.gameObject))
             {
@@ -36,7 +35,7 @@ public class SortStorage : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if(other.tag == objectsTag)
+        if(other.GetComponent<SortDragger>() != null)
         {
             if(objects.Contains(other.gameObject))
             {
