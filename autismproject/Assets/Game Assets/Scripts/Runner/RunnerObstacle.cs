@@ -7,6 +7,7 @@ public class RunnerObstacle : MonoBehaviour
     public float speed;
 
     bool canGiveScore = true;
+
     void Update()
     {
         if(transform.position.x <= -12.5)
@@ -26,6 +27,7 @@ public class RunnerObstacle : MonoBehaviour
         if(other.transform.tag == "Player")
         {
             other.transform.GetComponent<RunnerPlayer>().OnDeath.Invoke();
+            Time.timeScale = 0;
         }
     }
 }

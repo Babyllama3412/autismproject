@@ -6,30 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Game Assets/Scenes/Basic Scene/Basic Main Menu.unity
-    guid: ad7edd6e5b21d5249855bb92e552350e
+    path: Assets/Game Assets/Scenes/Main Menu.unity
+    guid: 7d7da3043ed459b498a6962607270a16
   - enabled: 1
-    path: Assets/Game Assets/Scenes/Basic Scene/Maze/MazeDiff.unity
-    guid: aa522e595283f2648a81c9abf5350137
+    path: Assets/Game Assets/Scenes/Maze.unity
+    guid: da560f3612fb3c544a1cf7b94bfca293
   - enabled: 1
-    path: Assets/Game Assets/Scenes/Basic Scene/Maze/Maze Easy.unity
-    guid: f2e47eea64dc8d745a42e85d81601650
-  - enabled: 1
-    path: Assets/Game Assets/Scenes/Basic Scene/Maze/Maze Medium.unity
-    guid: b4d42eaf11923994e9c0152a6cdd4d1d
-  - enabled: 1
-    path: Assets/Game Assets/Scenes/Basic Scene/Maze/Maze Hard.unity
-    guid: 944d975e32194fb46a3f85917cb829f8
-  - enabled: 1
-    path: Assets/Game Assets/Scenes/Basic Scene/Sort.unity
+    path: Assets/Game Assets/Scenes/Sort.unity
     guid: b8274a072e397424d8ea4e87f515e2d1
   - enabled: 1
-    path: Assets/Game Assets/Scenes/Basic Scene/Matching.unity
+    path: Assets/Game Assets/Scenes/Matching.unity
     guid: 7b14bd966222d5747a732026dba15e6c
   - enabled: 1
-    path: Assets/Game Assets/Scenes/Basic Scene/Band.unity
+    path: Assets/Game Assets/Scenes/Band.unity
     guid: 6809244f3307dd5469c76be7a8f15ccc
   - enabled: 1
-    path: Assets/Game Assets/Scenes/Basic Scene/Runner.unity
+    path: Assets/Game Assets/Scenes/Runner.unity
     guid: 6a56ca45e060ae54584038355ad1cca1
+  - enabled: 1
+    path: Assets/Game Assets/Scenes/Adventure.unity
+    guid: 7769f33fb4fa2e5458344a36556ad760
   m_configObjects: {}

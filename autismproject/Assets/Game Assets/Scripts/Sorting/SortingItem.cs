@@ -6,5 +6,5 @@ using UnityEngine;
 public class SortingItem : ScriptableObject
 {
 	public string categoryName;
-	public List<SpriteRenderer> items = new List<SpriteRenderer>();
+	public List<Sprite> items = new List<Sprite>();
 }

@@ -10,6 +10,12 @@ public class RunnerPlayer : MonoBehaviour
     public UnityEvent OnDeath;
     public float jumpStrength;
     [ReadOnly] public bool grounded;
+
+    public void ResetTime()
+    {
+        Time.timeScale = 1;
+    }
+
     void Update()
     {
         if(Input.GetMouseButtonDown(0) && grounded)

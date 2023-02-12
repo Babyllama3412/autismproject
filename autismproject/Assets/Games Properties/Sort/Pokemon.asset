@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d45357c9eb71fd44f8d9127fd6332e23, type: 3}
+  m_Name: Pokemon
+  m_EditorClassIdentifier: 
+  categoryName: Pokemon
+  items:
+  - {fileID: -8574696101495783950, guid: a68210714ca925845b1f09628fdad109, type: 3}
+  - {fileID: 4766530017255477939, guid: a68210714ca925845b1f09628fdad109, type: 3}
+  - {fileID: 5823984158448074807, guid: a68210714ca925845b1f09628fdad109, type: 3}
+  - {fileID: 1766468087077502812, guid: a68210714ca925845b1f09628fdad109, type: 3}
+  - {fileID: 3935655500187758481, guid: a68210714ca925845b1f09628fdad109, type: 3}
+  - {fileID: 5189659384917521169, guid: a68210714ca925845b1f09628fdad109, type: 3}
+  - {fileID: -6202695361762473198, guid: a68210714ca925845b1f09628fdad109, type: 3}
+  - {fileID: 5594433515015719229, guid: a68210714ca925845b1f09628fdad109, type: 3}

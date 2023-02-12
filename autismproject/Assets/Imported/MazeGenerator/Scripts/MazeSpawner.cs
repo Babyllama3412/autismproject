@@ -27,10 +27,6 @@ public class MazeSpawner : MonoBehaviour {
 	public GameObject GoalPrefab = null;
 
 	private BasicMazeGenerator mMazeGenerator = null;
-
-	void Start () {
-		Generate();
-	}
 	
 	public void Generate()
 	{

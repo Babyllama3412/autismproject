@@ -14,6 +14,7 @@ public class MazeManager : MonoBehaviour
 	[HorizontalLine(height: 7,color:EColor.Black)]
 	[Required][SerializeField] Rigidbody player;
 	[MinValue(0)] public float playerSpeed = 2;
+	[Required][SerializeField] FloatingJoystick joystick;
 	public bool allowMovement;
 	
 	[HorizontalLine(height: 7,color:EColor.Black)]
@@ -26,28 +27,36 @@ public class MazeManager : MonoBehaviour
 	MazeGoal mazeGoal;
 	bool reachedEnd;
 	bool reachedEndUpdate = true;
-	Vector2 mousePositions;
-	
-	
-	void Awake()
-	{
-		Init();
-	}
+	Vector2 joystickPosition;
+
 	void Start()
 	{
+		player.GetComponent<MeshRenderer>().enabled = false;
+	}
+
+
+	public void StartGame(int index)
+	{
+		currentDifficulty = GetDifficulties()[index];
+		InitDimensions();
+
+		mazeSpawner.Generate();
 		SetupEndGoal();
 		CameraSetup();
+
+		player.GetComponent<MeshRenderer>().enabled = true;
 	}
+
 	void Update()
 	{
-		mousePositions = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+		joystickPosition = new Vector2(joystick.Horizontal, joystick.Vertical);
 		
 		MazeEndUpdate();
 	}
 	void FixedUpdate()
 	{
 		if(allowMovement)
-			player.velocity = new Vector3(mousePositions.x-(Screen.width/2),0,mousePositions.y-(Screen.height/2))
+			player.velocity = new Vector3(joystickPosition.x,0,joystickPosition.y)
 			* Time.fixedDeltaTime * playerSpeed;
 	}
 	
@@ -85,7 +94,7 @@ public class MazeManager : MonoBehaviour
 		mazeCamera.orthographicSize = currentDifficulty.rows * 3;
 	}
 	
-	void Init()
+	void InitDimensions()
 	{
 		mazeSpawner.Rows = currentDifficulty.rows;
 		mazeSpawner.Columns = currentDifficulty.columns;
