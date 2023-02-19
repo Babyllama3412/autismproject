@@ -41,6 +41,7 @@ public class FirstPersonController : MonoBehaviour
 	Vector2 appliedMouseDelta;
 	Vector3 moveDirection = Vector3.zero;
 	float yVel;
+	bool activateMouse;
 
 	public static FirstPersonController Instance;
 
@@ -54,11 +55,13 @@ public class FirstPersonController : MonoBehaviour
 		cc = GetComponent<CharacterController>();
 	}
 	void Update()
-	{
+	{	
+		if(Input.GetKeyDown(KeyCode.T)) activateMouse = !activateMouse;
+		if(Input.GetMouseButtonDown(0) && activateMouse) activateMouse = false;
 		if(pcMode)
 		{
-			Cursor.lockState = DialoguePanel.Instance.dialogeActive || GoodsManager.Instance.ranOut? CursorLockMode.None: CursorLockMode.Locked;
-			Cursor.visible = DialoguePanel.Instance.dialogeActive || GoodsManager.Instance.ranOut? true : false;
+			Cursor.lockState = DialoguePanel.Instance.dialogeActive || GoodsManager.Instance.ranOut || activateMouse? CursorLockMode.None: CursorLockMode.Locked;
+			Cursor.visible = DialoguePanel.Instance.dialogeActive || GoodsManager.Instance.ranOut || activateMouse? true : false;
 		} else
 		{
 			Cursor.lockState = CursorLockMode.None;
@@ -67,7 +70,7 @@ public class FirstPersonController : MonoBehaviour
 
 		if(allowJump)
 			Jump();
-		if(allowLook)
+		if(allowLook && !activateMouse)
 			Look();
 		if(allowMove)
 			Move();
