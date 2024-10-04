@@ -30169,7 +30169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 181074771429178315, guid: 9ec9981e29b7ab8468be7626434b1b29, type: 3}
       propertyPath: pcMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 181074771429178315, guid: 9ec9981e29b7ab8468be7626434b1b29, type: 3}
       propertyPath: allowJump
